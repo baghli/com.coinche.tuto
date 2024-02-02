@@ -56,7 +56,8 @@ public Carte(Couleur couleur, Figure figure, boolean affiche) {
 	
 	@Override
 	public String toString() {
+		
 		// TODO Auto-generated method stub
-		return Figure.getNom + " de "+ Couleur.getNom;
+		return null ;
 	}
 }

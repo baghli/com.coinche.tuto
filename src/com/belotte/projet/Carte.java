@@ -6,21 +6,12 @@ public class Carte {
 	private Figure figure;
 	private boolean affiche;
 
-public Carte(Couleur couleur, Figure figure) {
+	public Carte(Couleur couleur, Figure figure) {
 		super();
 		this.couleur = couleur;
 		this.figure = figure;
 		affiche=false;
 	}
-
-
-public Carte(Couleur couleur, Figure figure, boolean affiche) {
-		super();
-		this.couleur = couleur;
-		this.figure = figure;
-		this.affiche = affiche;
-	}
-
 
 	public Couleur getCouleur() {
 		return couleur;
@@ -53,11 +44,15 @@ public Carte(Couleur couleur, Figure figure, boolean affiche) {
 	}
 	
 	//to string
-	
 	@Override
 	public String toString() {
-		
 		// TODO Auto-generated method stub
-		return null ;
+		String affichage;
+		//Condition d'affichage
+		if(affiche)
+			affichage = figure.getNom() +"de " + couleur.getNom() ;
+		else
+			affichage = "Carte retounée";
+		return affichage;
 	}
 }

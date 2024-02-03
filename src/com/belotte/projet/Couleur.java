@@ -7,7 +7,7 @@ public enum Couleur {
 	TREFLE("trefle");
 
 	private final String nom;
-	
+
 	private Couleur(String nom) {
 		this.nom = nom;
 	}
@@ -15,4 +15,5 @@ public enum Couleur {
 	public String getNom() {
 		return nom;
 	}
+
 }

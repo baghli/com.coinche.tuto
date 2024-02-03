@@ -1,14 +1,14 @@
 package com.belotte.projet;
 
 public enum Figure {
-	SEPT("sept ",0,1 ),
-	HUITE("huite ",0,2),
-	NEUF("neuf ",0,3),
-	DIX("dix ",10,7),
-	VALET("valet ",1,4),
-	DAME("dame ",2,5),
-	ROI("roi ",3,6),
-	AS("as ",11,8);
+	SEPT("Sept ",0,1 ),
+	HUITE("Huite ",0,2),
+	NEUF("Neuf ",0,3),
+	DIX("Dix ",10,7),
+	VALET("Valet ",1,4),
+	DAME("Dame ",2,5),
+	ROI("Roi ",3,6),
+	AS("As ",11,8);
 	
 	private final String nom;
 	private final int points;
@@ -18,7 +18,6 @@ public enum Figure {
 		this.points = points;
 		this.poids = poids;
 	}
-	
 	public String getNom() {
 		return nom;
 	}
@@ -28,5 +27,7 @@ public enum Figure {
 	public int getPoids() {
 		return poids;
 	}
+	
+
 		
 }
